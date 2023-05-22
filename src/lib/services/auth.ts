@@ -1,13 +1,11 @@
-import { goto } from '$app/navigation';
 import { supabase } from '$lib/supabase';
 // import { username, fullname, avatar, userId } from '$lib/stores/userStore';
 // import { toast } from '@zerodevx/svelte-toast';
 
-export const signout = () => {
-    supabase.auth.signOut();
-    goto('/auth');
+export const signout = async () => {
+    await supabase.auth.signOut();
+    location.reload();
 };
-
 
 // * TODO: Add error handling for profile not existing
 // export const getProfile = async (id: string | undefined) => {

@@ -1,9 +1,9 @@
 <script lang="ts">
+	import './styles.css';
 	import { onMount } from 'svelte';
 	import type { AuthSession } from '@supabase/supabase-js';
 	// import { getProfile } from '$lib/services/auth';
 	import Header from './Header.svelte';
-	import './styles.css';
 	import { goto } from '$app/navigation';
 
 	export let data: { session: AuthSession | null };

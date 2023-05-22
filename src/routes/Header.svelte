@@ -10,7 +10,7 @@
 <header>
 	<div class="corner">
 		<a href="https://kit.svelte.dev">
-			<img src={logo} alt="SvelteKit" />
+			GitTracker
 		</a>
 	</div>
 
@@ -18,7 +18,7 @@
 		<ul>
 			{#if !session}
 				<li aria-current={$page.url.pathname === '/auth' ? 'page' : undefined}>
-					<a href="/auth">Auth</a>
+					<a href="/auth">Please authenticate your GitTracker account</a>
 				</li>
 			{:else}
 				<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
@@ -39,10 +39,11 @@
 	header {
 		display: flex;
 		justify-content: space-between;
+		width: 100vw;
 	}
 
 	.corner {
-		width: 3em;
+		width: 7em;
 		height: 3em;
 	}
 
@@ -54,16 +55,9 @@
 		height: 100%;
 	}
 
-	.corner img {
-		width: 2em;
-		height: 2em;
-		object-fit: contain;
-	}
-
 	nav {
 		display: flex;
 		justify-content: center;
-		/* --background: rgba(255, 255, 255, 0.7); */
 	}
 
 	ul {

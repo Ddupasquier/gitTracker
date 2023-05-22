@@ -1,7 +1,6 @@
 <script>
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
-	import Signup from '$lib/components/auth/Signup.svelte';
 </script>
 
 <svelte:head>

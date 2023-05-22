@@ -36,11 +36,14 @@
 </div>
 
 <style lang="scss">
+	$light-blue: #677bc4;
+	$darker-blue: #5683b3;
 	.signup {
 		display: flex;
 		flex-direction: column;
 		width: 300px;
 		margin: auto;
+    margin-top: 5rem;
 		padding: 2rem;
 		border-radius: 8px;
 		box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
@@ -62,7 +65,7 @@
 			width: 100%;
 			box-sizing: border-box;
 			&:focus {
-				border-color: #677bc4; // Light blue
+				border-color: $light-blue;
 				outline: none;
 			}
 		}
@@ -71,7 +74,7 @@
 			padding: 0.8rem 1rem;
 			border: none;
 			border-radius: 4px;
-			background: #677bc4; // Light blue
+			background: $light-blue;
 			color: #fff;
 			font-size: 1rem;
 			cursor: pointer;
@@ -80,7 +83,7 @@
 			transition: background 0.3s;
 
 			&:hover {
-				background: #5683b3; // Darken color on hover
+				background: $darker-blue;
 			}
 		}
 	}
@@ -89,7 +92,7 @@
 		margin-top: 1rem;
 		background: none;
 		border: none;
-		color: #677bc4; // Light blue
+		color: $light-blue;
 		font-size: 1rem;
 		cursor: pointer;
 	}
@@ -98,5 +101,6 @@
 		font-weight: bold;
 		text-align: center;
 		margin-top: 0;
+		color: $darker-blue;
 	}
 </style>
